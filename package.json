@@ -20,11 +20,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/spelczer/aoide"
+    "url": "https://github.com/Templum/aoide"
   },
-  "homepage": "https://github.com/spelczer/aoide#readme",
+  "homepage": "https://github.com/Templum/aoide#readme",
   "bugs": {
-    "url": "https://github.com/spelczer/aoide/issues"
+    "url": "https://github.com/Templum/aoide/issues"
   },
   "engines": {
     "node": ">=22.0.0"
