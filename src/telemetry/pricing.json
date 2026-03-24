@@ -1,0 +1,1173 @@
+{
+  "updatedAt": "2026-03-24T11:24:07.826Z",
+  "sources": [
+    "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
+    "https://www.llm-prices.com/current-v1.json"
+  ],
+  "models": {
+    "amazon-nova-lite": {
+      "input": 0.06,
+      "output": 0.24
+    },
+    "amazon-nova-micro": {
+      "input": 0.035,
+      "output": 0.14
+    },
+    "amazon-nova-premier": {
+      "input": 2.5,
+      "output": 12.5
+    },
+    "amazon-nova-pro": {
+      "input": 0.8,
+      "output": 3.2
+    },
+    "babbage-002": {
+      "input": 0.4,
+      "output": 0.4
+    },
+    "chatdolphin": {
+      "input": 0.5,
+      "output": 0.5
+    },
+    "chatgpt-4o-latest": {
+      "input": 5,
+      "output": 15
+    },
+    "claude-3-5-haiku-20241022": {
+      "input": 0.8,
+      "output": 4
+    },
+    "claude-3-5-sonnet-20240620": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-3-5-sonnet-20241022": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-3-7-sonnet-20250219": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-3-haiku": {
+      "input": 0.25,
+      "output": 1.25
+    },
+    "claude-3-haiku-20240307": {
+      "input": 0.25,
+      "output": 1.25
+    },
+    "claude-3-opus": {
+      "input": 15,
+      "output": 75
+    },
+    "claude-3-opus-20240229": {
+      "input": 15,
+      "output": 75
+    },
+    "claude-3-sonnet-20240229": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-3.5-haiku": {
+      "input": 0.8,
+      "output": 4
+    },
+    "claude-3.5-sonnet": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-3.7-sonnet": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-4-opus-20250514": {
+      "input": 15,
+      "output": 75
+    },
+    "claude-4-sonnet-20250514": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-4.5-haiku": {
+      "input": 1,
+      "output": 5
+    },
+    "claude-haiku-4-5": {
+      "input": 1,
+      "output": 5
+    },
+    "claude-haiku-4-5-20251001": {
+      "input": 1,
+      "output": 5
+    },
+    "claude-opus-4": {
+      "input": 15,
+      "output": 75
+    },
+    "claude-opus-4-1": {
+      "input": 15,
+      "output": 75
+    },
+    "claude-opus-4-1-20250805": {
+      "input": 15,
+      "output": 75
+    },
+    "claude-opus-4-20250514": {
+      "input": 15,
+      "output": 75
+    },
+    "claude-opus-4-5": {
+      "input": 5,
+      "output": 25
+    },
+    "claude-opus-4-5-20251101": {
+      "input": 5,
+      "output": 25
+    },
+    "claude-opus-4-6": {
+      "input": 5,
+      "output": 25
+    },
+    "claude-opus-4-6-20260205": {
+      "input": 5,
+      "output": 25
+    },
+    "claude-sonnet-4-20250514": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-sonnet-4-5": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-sonnet-4-5-20250929": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-sonnet-4-5-20250929-v1:0": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-sonnet-4-6": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-sonnet-4.5": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-sonnet-4.5-200k": {
+      "input": 6,
+      "output": 22.5
+    },
+    "codestral-latest": {
+      "input": 0.3,
+      "output": 0.9
+    },
+    "codex-mini-latest": {
+      "input": 1.5,
+      "output": 6
+    },
+    "command": {
+      "input": 1,
+      "output": 2
+    },
+    "command-a-03-2025": {
+      "input": 2.5,
+      "output": 10
+    },
+    "command-light": {
+      "input": 0.3,
+      "output": 0.6
+    },
+    "command-nightly": {
+      "input": 1,
+      "output": 2
+    },
+    "command-r": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "command-r-08-2024": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "command-r-plus": {
+      "input": 2.5,
+      "output": 10
+    },
+    "command-r-plus-08-2024": {
+      "input": 2.5,
+      "output": 10
+    },
+    "command-r7b-12-2024": {
+      "input": 0.15,
+      "output": 0.0375
+    },
+    "computer-use-preview": {
+      "input": 3,
+      "output": 12
+    },
+    "davinci-002": {
+      "input": 2,
+      "output": 2
+    },
+    "deep-research-pro-preview-12-2025": {
+      "input": 2,
+      "output": 12
+    },
+    "deepseek-chat": {
+      "input": 0.27,
+      "output": 1.1
+    },
+    "deepseek-reasoner": {
+      "input": 0.55,
+      "output": 2.19
+    },
+    "dolphin": {
+      "input": 0.5,
+      "output": 0.5
+    },
+    "fireworks-ai-4.1b-to-16b": {
+      "input": 0.2,
+      "output": 0.2
+    },
+    "fireworks-ai-56b-to-176b": {
+      "input": 1.2,
+      "output": 1.2
+    },
+    "fireworks-ai-above-16b": {
+      "input": 0.9,
+      "output": 0.9
+    },
+    "fireworks-ai-moe-up-to-56b": {
+      "input": 0.5,
+      "output": 0.5
+    },
+    "fireworks-ai-up-to-4b": {
+      "input": 0.2,
+      "output": 0.2
+    },
+    "ft:babbage-002": {
+      "input": 1.6,
+      "output": 1.6
+    },
+    "ft:davinci-002": {
+      "input": 12,
+      "output": 12
+    },
+    "ft:gpt-3.5-turbo": {
+      "input": 3,
+      "output": 6
+    },
+    "ft:gpt-3.5-turbo-0125": {
+      "input": 3,
+      "output": 6
+    },
+    "ft:gpt-3.5-turbo-0613": {
+      "input": 3,
+      "output": 6
+    },
+    "ft:gpt-3.5-turbo-1106": {
+      "input": 3,
+      "output": 6
+    },
+    "ft:gpt-4-0613": {
+      "input": 30,
+      "output": 60
+    },
+    "ft:gpt-4.1-2025-04-14": {
+      "input": 3,
+      "output": 12
+    },
+    "ft:gpt-4.1-mini-2025-04-14": {
+      "input": 0.8,
+      "output": 3.2
+    },
+    "ft:gpt-4.1-nano-2025-04-14": {
+      "input": 0.2,
+      "output": 0.8
+    },
+    "ft:gpt-4o-2024-08-06": {
+      "input": 3.75,
+      "output": 15
+    },
+    "ft:gpt-4o-2024-11-20": {
+      "input": 3.75,
+      "output": 15
+    },
+    "ft:gpt-4o-mini-2024-07-18": {
+      "input": 0.3,
+      "output": 1.2
+    },
+    "ft:o4-mini-2025-04-16": {
+      "input": 4,
+      "output": 16
+    },
+    "gemini-1.5-flash": {
+      "input": 0.075,
+      "output": 0.3
+    },
+    "gemini-1.5-flash-128k": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "gemini-1.5-flash-8b": {
+      "input": 0.0375,
+      "output": 0.15
+    },
+    "gemini-1.5-flash-8b-128k": {
+      "input": 0.075,
+      "output": 0.3
+    },
+    "gemini-1.5-pro": {
+      "input": 1.25,
+      "output": 5
+    },
+    "gemini-1.5-pro-128k": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gemini-2.0-flash": {
+      "input": 0.1,
+      "output": 0.4
+    },
+    "gemini-2.0-flash-001": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "gemini-2.0-flash-lite": {
+      "input": 0.075,
+      "output": 0.3
+    },
+    "gemini-2.0-flash-lite-001": {
+      "input": 0.075,
+      "output": 0.3
+    },
+    "gemini-2.5-computer-use-preview-10-2025": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gemini-2.5-flash": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "gemini-2.5-flash-image": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "gemini-2.5-flash-lite": {
+      "input": 0.1,
+      "output": 0.4
+    },
+    "gemini-2.5-flash-lite-preview-06-17": {
+      "input": 0.1,
+      "output": 0.4
+    },
+    "gemini-2.5-flash-lite-preview-09-2025": {
+      "input": 0.1,
+      "output": 0.4
+    },
+    "gemini-2.5-flash-native-audio-latest": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "gemini-2.5-flash-native-audio-preview-09-2025": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "gemini-2.5-flash-native-audio-preview-12-2025": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "gemini-2.5-flash-preview-09-2025": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "gemini-2.5-flash-preview-tts": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "gemini-2.5-pro": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gemini-2.5-pro-200k": {
+      "input": 2.5,
+      "output": 15
+    },
+    "gemini-2.5-pro-preview-03-25": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gemini-2.5-pro-preview-03-25-200k": {
+      "input": 2.5,
+      "output": 15
+    },
+    "gemini-2.5-pro-preview-tts": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gemini-3-1-pro-preview": {
+      "input": 2,
+      "output": 12
+    },
+    "gemini-3-1-pro-preview-200k": {
+      "input": 4,
+      "output": 18
+    },
+    "gemini-3-flash-preview": {
+      "input": 0.5,
+      "output": 3
+    },
+    "gemini-3-pro-image-preview": {
+      "input": 2,
+      "output": 12
+    },
+    "gemini-3-pro-preview": {
+      "input": 2,
+      "output": 12
+    },
+    "gemini-3-pro-preview-200k": {
+      "input": 4,
+      "output": 18
+    },
+    "gemini-3.1-flash-image-preview": {
+      "input": 0.5,
+      "output": 3
+    },
+    "gemini-3.1-flash-lite-preview": {
+      "input": 0.25,
+      "output": 1.5
+    },
+    "gemini-3.1-pro-preview": {
+      "input": 2,
+      "output": 12
+    },
+    "gemini-3.1-pro-preview-customtools": {
+      "input": 2,
+      "output": 12
+    },
+    "gemini-exp-1206": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "gemini-flash-latest": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "gemini-flash-lite-latest": {
+      "input": 0.1,
+      "output": 0.4
+    },
+    "gemini-live-2.5-flash-preview-native-audio-09-2025": {
+      "input": 0.3,
+      "output": 2
+    },
+    "gemini-pro-latest": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gemini-robotics-er-1.5-preview": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "gpt-3.5-turbo": {
+      "input": 0.5,
+      "output": 1.5
+    },
+    "gpt-3.5-turbo-0125": {
+      "input": 0.5,
+      "output": 1.5
+    },
+    "gpt-3.5-turbo-1106": {
+      "input": 1,
+      "output": 2
+    },
+    "gpt-3.5-turbo-16k": {
+      "input": 3,
+      "output": 4
+    },
+    "gpt-3.5-turbo-instruct": {
+      "input": 1.5,
+      "output": 2
+    },
+    "gpt-3.5-turbo-instruct-0914": {
+      "input": 1.5,
+      "output": 2
+    },
+    "gpt-4": {
+      "input": 30,
+      "output": 60
+    },
+    "gpt-4-0125-preview": {
+      "input": 10,
+      "output": 30
+    },
+    "gpt-4-0314": {
+      "input": 30,
+      "output": 60
+    },
+    "gpt-4-0613": {
+      "input": 30,
+      "output": 60
+    },
+    "gpt-4-1106-preview": {
+      "input": 10,
+      "output": 30
+    },
+    "gpt-4-turbo": {
+      "input": 10,
+      "output": 30
+    },
+    "gpt-4-turbo-2024-04-09": {
+      "input": 10,
+      "output": 30
+    },
+    "gpt-4-turbo-preview": {
+      "input": 10,
+      "output": 30
+    },
+    "gpt-4.1": {
+      "input": 2,
+      "output": 8
+    },
+    "gpt-4.1-2025-04-14": {
+      "input": 2,
+      "output": 8
+    },
+    "gpt-4.1-mini": {
+      "input": 0.4,
+      "output": 1.6
+    },
+    "gpt-4.1-mini-2025-04-14": {
+      "input": 0.4,
+      "output": 1.6
+    },
+    "gpt-4.1-nano": {
+      "input": 0.1,
+      "output": 0.4
+    },
+    "gpt-4.1-nano-2025-04-14": {
+      "input": 0.1,
+      "output": 0.4
+    },
+    "gpt-4.5": {
+      "input": 75,
+      "output": 150
+    },
+    "gpt-4o": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-4o-2024-05-13": {
+      "input": 5,
+      "output": 15
+    },
+    "gpt-4o-2024-08-06": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-4o-2024-11-20": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-4o-audio-preview": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-4o-audio-preview-2024-12-17": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-4o-audio-preview-2025-06-03": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-4o-mini": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "gpt-4o-mini-2024-07-18": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "gpt-4o-mini-audio-preview": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "gpt-4o-mini-audio-preview-2024-12-17": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "gpt-4o-mini-realtime-preview": {
+      "input": 0.6,
+      "output": 2.4
+    },
+    "gpt-4o-mini-realtime-preview-2024-12-17": {
+      "input": 0.6,
+      "output": 2.4
+    },
+    "gpt-4o-mini-search-preview": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "gpt-4o-mini-search-preview-2025-03-11": {
+      "input": 0.15,
+      "output": 0.6
+    },
+    "gpt-4o-mini-transcribe": {
+      "input": 1.25,
+      "output": 5
+    },
+    "gpt-4o-mini-transcribe-2025-03-20": {
+      "input": 1.25,
+      "output": 5
+    },
+    "gpt-4o-mini-transcribe-2025-12-15": {
+      "input": 1.25,
+      "output": 5
+    },
+    "gpt-4o-mini-tts": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-4o-mini-tts-2025-03-20": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-4o-mini-tts-2025-12-15": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-4o-realtime-preview": {
+      "input": 5,
+      "output": 20
+    },
+    "gpt-4o-realtime-preview-2024-12-17": {
+      "input": 5,
+      "output": 20
+    },
+    "gpt-4o-realtime-preview-2025-06-03": {
+      "input": 5,
+      "output": 20
+    },
+    "gpt-4o-search-preview": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-4o-search-preview-2025-03-11": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-4o-transcribe": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-4o-transcribe-diarize": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-5": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gpt-5-2025-08-07": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gpt-5-chat": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gpt-5-chat-latest": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gpt-5-codex": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gpt-5-mini": {
+      "input": 0.25,
+      "output": 2
+    },
+    "gpt-5-mini-2025-08-07": {
+      "input": 0.25,
+      "output": 2
+    },
+    "gpt-5-nano": {
+      "input": 0.05,
+      "output": 0.4
+    },
+    "gpt-5-nano-2025-08-07": {
+      "input": 0.05,
+      "output": 0.4
+    },
+    "gpt-5-pro": {
+      "input": 15,
+      "output": 120
+    },
+    "gpt-5-pro-2025-10-06": {
+      "input": 15,
+      "output": 120
+    },
+    "gpt-5-search-api": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gpt-5-search-api-2025-10-14": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gpt-5.1": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gpt-5.1-2025-11-13": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gpt-5.1-chat-latest": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gpt-5.1-codex": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gpt-5.1-codex-max": {
+      "input": 1.25,
+      "output": 10
+    },
+    "gpt-5.1-codex-mini": {
+      "input": 0.25,
+      "output": 2
+    },
+    "gpt-5.2": {
+      "input": 1.75,
+      "output": 14
+    },
+    "gpt-5.2-2025-12-11": {
+      "input": 1.75,
+      "output": 14
+    },
+    "gpt-5.2-chat-latest": {
+      "input": 1.75,
+      "output": 14
+    },
+    "gpt-5.2-codex": {
+      "input": 1.75,
+      "output": 14
+    },
+    "gpt-5.2-pro": {
+      "input": 21,
+      "output": 168
+    },
+    "gpt-5.2-pro-2025-12-11": {
+      "input": 21,
+      "output": 168
+    },
+    "gpt-5.3-chat-latest": {
+      "input": 1.75,
+      "output": 14
+    },
+    "gpt-5.3-codex": {
+      "input": 1.75,
+      "output": 14
+    },
+    "gpt-5.4": {
+      "input": 2.5,
+      "output": 15
+    },
+    "gpt-5.4-2026-03-05": {
+      "input": 2.5,
+      "output": 15
+    },
+    "gpt-5.4-272k": {
+      "input": 5,
+      "output": 22.5
+    },
+    "gpt-5.4-mini": {
+      "input": 0.75,
+      "output": 4.5
+    },
+    "gpt-5.4-nano": {
+      "input": 0.2,
+      "output": 1.25
+    },
+    "gpt-5.4-pro": {
+      "input": 30,
+      "output": 180
+    },
+    "gpt-5.4-pro-2026-03-05": {
+      "input": 30,
+      "output": 180
+    },
+    "gpt-5.4-pro-272k": {
+      "input": 60,
+      "output": 270
+    },
+    "gpt-audio": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-audio-1.5": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-audio-2025-08-28": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-audio-mini": {
+      "input": 0.6,
+      "output": 2.4
+    },
+    "gpt-audio-mini-2025-10-06": {
+      "input": 0.6,
+      "output": 2.4
+    },
+    "gpt-audio-mini-2025-12-15": {
+      "input": 0.6,
+      "output": 2.4
+    },
+    "gpt-image-1": {
+      "input": 10,
+      "output": 40
+    },
+    "gpt-image-1-mini": {
+      "input": 2,
+      "output": 8
+    },
+    "gpt-image-1.5": {
+      "input": 5,
+      "output": 10
+    },
+    "gpt-image-1.5-2025-12-16": {
+      "input": 5,
+      "output": 10
+    },
+    "gpt-realtime": {
+      "input": 4,
+      "output": 16
+    },
+    "gpt-realtime-1.5": {
+      "input": 4,
+      "output": 16
+    },
+    "gpt-realtime-2025-08-28": {
+      "input": 4,
+      "output": 16
+    },
+    "gpt-realtime-mini": {
+      "input": 0.6,
+      "output": 2.4
+    },
+    "gpt-realtime-mini-2025-10-06": {
+      "input": 0.6,
+      "output": 2.4
+    },
+    "gpt-realtime-mini-2025-12-15": {
+      "input": 0.6,
+      "output": 2.4
+    },
+    "grok-3": {
+      "input": 3,
+      "output": 15
+    },
+    "grok-3-mini": {
+      "input": 0.3,
+      "output": 0.5
+    },
+    "grok-4": {
+      "input": 3,
+      "output": 15
+    },
+    "grok-4-128k": {
+      "input": 6,
+      "output": 30
+    },
+    "grok-4-fast": {
+      "input": 0.2,
+      "output": 0.5
+    },
+    "grok-4-fast-128k": {
+      "input": 0.4,
+      "output": 1
+    },
+    "grok-4-fast-reasoning": {
+      "input": 0.2,
+      "output": 0.5
+    },
+    "grok-4-fast-reasoning-128k": {
+      "input": 0.4,
+      "output": 1
+    },
+    "grok-code-fast-1": {
+      "input": 0.2,
+      "output": 1.5
+    },
+    "j2-light": {
+      "input": 3,
+      "output": 3
+    },
+    "j2-mid": {
+      "input": 10,
+      "output": 10
+    },
+    "j2-ultra": {
+      "input": 15,
+      "output": 15
+    },
+    "jamba-1.5": {
+      "input": 0.2,
+      "output": 0.4
+    },
+    "jamba-1.5-large": {
+      "input": 2,
+      "output": 8
+    },
+    "jamba-1.5-large@001": {
+      "input": 2,
+      "output": 8
+    },
+    "jamba-1.5-mini": {
+      "input": 0.2,
+      "output": 0.4
+    },
+    "jamba-1.5-mini@001": {
+      "input": 0.2,
+      "output": 0.4
+    },
+    "jamba-large-1.6": {
+      "input": 2,
+      "output": 8
+    },
+    "jamba-large-1.7": {
+      "input": 2,
+      "output": 8
+    },
+    "jamba-mini-1.6": {
+      "input": 0.2,
+      "output": 0.4
+    },
+    "jamba-mini-1.7": {
+      "input": 0.2,
+      "output": 0.4
+    },
+    "jina-reranker-v2-base-multilingual": {
+      "input": 0.018,
+      "output": 0.018
+    },
+    "kimi-k2-0711-preview": {
+      "input": 0.6,
+      "output": 2.5
+    },
+    "kimi-k2-0905-preview": {
+      "input": 0.6,
+      "output": 2.5
+    },
+    "kimi-k2-thinking": {
+      "input": 0.6,
+      "output": 2.5
+    },
+    "kimi-k2-thinking-turbo": {
+      "input": 1.15,
+      "output": 8
+    },
+    "kimi-k2-turbo-preview": {
+      "input": 1.15,
+      "output": 8
+    },
+    "luminous-base": {
+      "input": 30,
+      "output": 33
+    },
+    "luminous-base-control": {
+      "input": 37.5,
+      "output": 41.25
+    },
+    "luminous-extended": {
+      "input": 45,
+      "output": 49.5
+    },
+    "luminous-extended-control": {
+      "input": 56.25,
+      "output": 61.875
+    },
+    "luminous-supreme": {
+      "input": 175,
+      "output": 192.5
+    },
+    "luminous-supreme-control": {
+      "input": 218.75,
+      "output": 240.625
+    },
+    "magistral-medium-latest": {
+      "input": 2,
+      "output": 5
+    },
+    "minimax-m2": {
+      "input": 0.3,
+      "output": 1.2
+    },
+    "ministral-3b-latest": {
+      "input": 0.04,
+      "output": 0.04
+    },
+    "ministral-8b-latest": {
+      "input": 0.1,
+      "output": 0.1
+    },
+    "mistral-large-latest": {
+      "input": 2,
+      "output": 6
+    },
+    "mistral-medium-2505": {
+      "input": 0.4,
+      "output": 2
+    },
+    "mistral-nemo": {
+      "input": 0.15,
+      "output": 0.15
+    },
+    "mistral-saba-latest": {
+      "input": 0.2,
+      "output": 0.6
+    },
+    "mistral-small-latest": {
+      "input": 0.1,
+      "output": 0.3
+    },
+    "o1": {
+      "input": 15,
+      "output": 60
+    },
+    "o1-2024-12-17": {
+      "input": 15,
+      "output": 60
+    },
+    "o1-mini": {
+      "input": 1.1,
+      "output": 4.4
+    },
+    "o1-preview": {
+      "input": 15,
+      "output": 60
+    },
+    "o1-pro": {
+      "input": 150,
+      "output": 600
+    },
+    "o1-pro-2025-03-19": {
+      "input": 150,
+      "output": 600
+    },
+    "o3": {
+      "input": 10,
+      "output": 40
+    },
+    "o3-2025-04-16": {
+      "input": 2,
+      "output": 8
+    },
+    "o3-deep-research": {
+      "input": 10,
+      "output": 40
+    },
+    "o3-deep-research-2025-06-26": {
+      "input": 10,
+      "output": 40
+    },
+    "o3-mini": {
+      "input": 1.1,
+      "output": 4.4
+    },
+    "o3-mini-2025-01-31": {
+      "input": 1.1,
+      "output": 4.4
+    },
+    "o3-pro": {
+      "input": 20,
+      "output": 80
+    },
+    "o3-pro-2025-06-10": {
+      "input": 20,
+      "output": 80
+    },
+    "o4-mini": {
+      "input": 1.1,
+      "output": 4.4
+    },
+    "o4-mini-2025-04-16": {
+      "input": 1.1,
+      "output": 4.4
+    },
+    "o4-mini-deep-research": {
+      "input": 2,
+      "output": 8
+    },
+    "o4-mini-deep-research-2025-06-26": {
+      "input": 2,
+      "output": 8
+    },
+    "open-mistral-7b": {
+      "input": 0.25,
+      "output": 0.25
+    },
+    "open-mixtral-8x22b": {
+      "input": 2,
+      "output": 6
+    },
+    "open-mixtral-8x7b": {
+      "input": 0.7,
+      "output": 0.7
+    },
+    "pixtral-12b": {
+      "input": 0.15,
+      "output": 0.15
+    },
+    "pixtral-large-latest": {
+      "input": 2,
+      "output": 6
+    },
+    "text-davinci-003": {
+      "input": 20,
+      "output": 20
+    },
+    "text-unicorn": {
+      "input": 10,
+      "output": 28
+    },
+    "text-unicorn@001": {
+      "input": 10,
+      "output": 28
+    },
+    "together-ai-21.1b-41b": {
+      "input": 0.8,
+      "output": 0.8
+    },
+    "together-ai-4.1b-8b": {
+      "input": 0.2,
+      "output": 0.2
+    },
+    "together-ai-41.1b-80b": {
+      "input": 0.9,
+      "output": 0.9
+    },
+    "together-ai-8.1b-21b": {
+      "input": 0.3,
+      "output": 0.3
+    },
+    "together-ai-81.1b-110b": {
+      "input": 1.8,
+      "output": 1.8
+    },
+    "together-ai-up-to-4b": {
+      "input": 0.1,
+      "output": 0.1
+    }
+  }
+}
