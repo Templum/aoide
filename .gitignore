@@ -146,6 +146,9 @@ dist
 # Serverless directories
 .serverless/
 
+# Snapshots
+__prompt_snapshots__
+
 # FuseBox cache
 .fusebox/
 
