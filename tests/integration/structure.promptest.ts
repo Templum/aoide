@@ -4,8 +4,8 @@
  * Output format and structure tests — verifies the model respects explicit
  * formatting constraints: JSON schema, regex patterns, and structural layouts.
  */
-import { describe, it, expect, runPrompt } from 'aoide';
-import type { ModelTarget } from 'aoide';
+import { describe, it, expect, runPrompt } from '@templum/aoide';
+import type { ModelTarget } from '@templum/aoide';
 
 const TARGET: ModelTarget = { provider: 'local:lmstudio', model: 'google/gemma-3-12b' };
 

@@ -5,8 +5,8 @@
  * constraints and does not discuss forbidden topics, even when a user prompt
  * implicitly steers toward them.
  */
-import { describe, it, expect, runPrompt } from 'aoide';
-import type { ModelTarget } from 'aoide';
+import { describe, it, expect, runPrompt } from '@templum/aoide';
+import type { ModelTarget } from '@templum/aoide';
 
 const TARGET: ModelTarget = { provider: 'local:lmstudio', model: 'google/gemma-3-12b' };
 

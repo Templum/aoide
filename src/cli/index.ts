@@ -53,7 +53,7 @@ async function runTestFiles(
   if (hasFailed(aggregateRoot)) anyFileFailed = true;
 }
 
-const INIT_CONFIG = `import type { AoideConfig } from 'aoide';
+const INIT_CONFIG = `import type { AoideConfig } from '@templum/aoide';
 
 const config: AoideConfig = {
   judge: {
@@ -67,11 +67,11 @@ const config: AoideConfig = {
 export default config;
 `;
 
-const INIT_EXAMPLE = `import { describe, it, expect, beforeAll, registerProvider, runPrompt } from 'aoide';
-import type { ModelTarget } from 'aoide';
+const INIT_EXAMPLE = `import { describe, it, expect, beforeAll, registerProvider, runPrompt } from '@templum/aoide';
+import type { ModelTarget } from '@templum/aoide';
 
 // Register your provider here. Example uses LM Studio.
-// import { LMStudioProvider } from 'aoide/providers/lmstudio';
+// import { LMStudioProvider } from '@templum/aoide/providers/lmstudio';
 // beforeAll(() => {
 //   registerProvider(new LMStudioProvider('local:lmstudio'));
 // });

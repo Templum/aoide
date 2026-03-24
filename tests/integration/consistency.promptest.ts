@@ -4,8 +4,8 @@
  * Factual consistency and multi-turn coherence tests — verifies the model
  * does not contradict source documents or its own prior responses.
  */
-import { describe, it, expect, runPrompt } from 'aoide';
-import type { ModelTarget } from 'aoide';
+import { describe, it, expect, runPrompt } from '@templum/aoide';
+import type { ModelTarget } from '@templum/aoide';
 
 const TARGET: ModelTarget = { provider: 'local:lmstudio', model: 'google/gemma-3-12b' };
 

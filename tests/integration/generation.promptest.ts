@@ -4,8 +4,8 @@
  * Core generation quality tests — verifies the model produces coherent,
  * relevant, and appropriately scoped responses to straightforward prompts.
  */
-import { describe, it, expect, runPrompt } from 'aoide';
-import type { ModelTarget } from 'aoide';
+import { describe, it, expect, runPrompt } from '@templum/aoide';
+import type { ModelTarget } from '@templum/aoide';
 
 const TARGET: ModelTarget = { provider: 'local:lmstudio', model: 'google/gemma-3-12b' };
 

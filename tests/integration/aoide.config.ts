@@ -1,6 +1,6 @@
-import type { AoideConfig } from 'aoide';
-import { LMStudioProvider } from 'aoide/providers/lmstudio';
-import { registerProvider } from 'aoide';
+import type { AoideConfig } from '@templum/aoide';
+import { LMStudioProvider } from '@templum/aoide/providers/lmstudio';
+import { registerProvider } from '@templum/aoide';
 
 registerProvider(new LMStudioProvider('local:lmstudio', 'http://localhost:1234/v1'));
 

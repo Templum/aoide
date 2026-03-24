@@ -5,8 +5,8 @@
 A TypeScript testing framework for LLM-powered applications. Write tests that send real prompts to language models and assert on their responses — including deterministic checks, JSON schema validation, and LLM-as-judge evaluations.
 
 ```ts
-import { describe, it, expect, runPrompt, registerProvider, beforeAll } from 'aoide';
-import { OpenAIProvider } from 'aoide/providers/openai';
+import { describe, it, expect, runPrompt, registerProvider, beforeAll } from '@templum/aoide';
+import { OpenAIProvider } from '@templum/aoide/providers/openai';
 
 beforeAll(() => {
   registerProvider(new OpenAIProvider('openai', process.env.OPENAI_API_KEY!));
@@ -77,7 +77,7 @@ describe('Customer support bot', () => {
 ## Installation
 
 ```bash
-npm install --save-dev aoide
+npm install --save-dev @templum/aoide
 ```
 
 **Requirements:** Node.js ≥ 22
@@ -89,13 +89,13 @@ npm install --save-dev aoide
 ## Quick Start
 
 ```bash
-npx aoide init
+npx @templum/aoide init
 ```
 
 This creates `aoide.config.ts` and `examples/basic.promptest.ts`. Edit the config to add your judge target and API key, then run:
 
 ```bash
-npx aoide
+npx @templum/aoide
 ```
 
 ---
@@ -105,7 +105,7 @@ npx aoide
 Create `aoide.config.ts` in your project root:
 
 ```ts
-import type { AoideConfig } from 'aoide';
+import type { AoideConfig } from '@templum/aoide';
 
 const config: AoideConfig = {
   // LLM used to evaluate judge-based assertions
@@ -175,8 +175,8 @@ import {
   runPrompt, runTournament,
   registerProvider, setupJudge, setupEmbedder,
   beforeAll, afterAll, beforeEach, afterEach,
-} from 'aoide';
-import { OpenAIProvider } from 'aoide/providers/openai';
+} from '@templum/aoide';
+import { OpenAIProvider } from '@templum/aoide/providers/openai';
 
 beforeAll(() => {
   registerProvider(new OpenAIProvider('openai', process.env.OPENAI_API_KEY!));
@@ -237,8 +237,8 @@ Each model becomes a separate test named `summarises correctly [openai:gpt-4o-mi
 ### OpenAI
 
 ```ts
-import { OpenAIProvider } from 'aoide/providers/openai';
-// also available as: import { OpenAIProvider } from 'aoide';
+import { OpenAIProvider } from '@templum/aoide/providers/openai';
+// also available as: import { OpenAIProvider } from '@templum/aoide';
 
 registerProvider(new OpenAIProvider('openai', process.env.OPENAI_API_KEY!));
 
@@ -251,7 +251,7 @@ Supports embeddings (`toBeSemanticallySimilarTo`).
 ### Anthropic
 
 ```ts
-import { AnthropicProvider } from 'aoide';
+import { AnthropicProvider } from '@templum/aoide';
 
 registerProvider(new AnthropicProvider('anthropic', process.env.ANTHROPIC_API_KEY!));
 
@@ -268,8 +268,8 @@ registerProvider(new AnthropicProvider('anthropic', process.env.ANTHROPIC_API_KE
 ### Ollama (local)
 
 ```ts
-import { OllamaProvider } from 'aoide/providers/ollama';
-// also available as: import { OllamaProvider } from 'aoide';
+import { OllamaProvider } from '@templum/aoide/providers/ollama';
+// also available as: import { OllamaProvider } from '@templum/aoide';
 
 // Default id is 'local:ollama' — automatically runs at concurrency 1
 registerProvider(new OllamaProvider());
@@ -285,8 +285,8 @@ Supports embeddings (`toBeSemanticallySimilarTo`).
 ### LM Studio (local)
 
 ```ts
-import { LMStudioProvider } from 'aoide/providers/lmstudio';
-// also available as: import { LMStudioProvider } from 'aoide';
+import { LMStudioProvider } from '@templum/aoide/providers/lmstudio';
+// also available as: import { LMStudioProvider } from '@templum/aoide';
 
 // Default id is 'local:lmstudio' — automatically runs at concurrency 1
 registerProvider(new LMStudioProvider());
@@ -295,7 +295,7 @@ registerProvider(new LMStudioProvider());
 ### Custom Provider
 
 ```ts
-import type { LLMProvider } from 'aoide';
+import type { LLMProvider } from '@templum/aoide';
 
 const myProvider: LLMProvider = {
   id: 'my-provider',
@@ -327,7 +327,7 @@ const config: AoideConfig = {
 Or programmatically in a `beforeAll`:
 
 ```ts
-import { setupEmbedder } from 'aoide';
+import { setupEmbedder } from '@templum/aoide';
 
 setupEmbedder({ target: { provider: 'openai', model: 'text-embedding-3-small' } });
 ```
@@ -491,7 +491,7 @@ result.scores   // Array<{ target, averageScore, responses, reasoning }>
 Run tests from a Node.js script or CI pipeline without shelling out to the CLI:
 
 ```ts
-import { runTests } from 'aoide';
+import { runTests } from '@templum/aoide';
 
 const result = await runTests({
   // Optional inline config — skips file discovery
@@ -588,15 +588,15 @@ aoide maintains two separate caches, both stored inside `__prompt_snapshots__/`:
 Both caches are keyed by a SHA-256 hash of the inputs (provider, model, messages, system prompt, temperature). Add `__prompt_snapshots__/` to `.gitignore`, or commit it to make CI runs free.
 
 ```bash
-npx aoide --update-snapshots   # re-fetch all app prompts and refresh their cache
-npx aoide --no-cache           # bypass both caches entirely
+npx @templum/aoide --update-snapshots   # re-fetch all app prompts and refresh their cache
+npx @templum/aoide --no-cache           # bypass both caches entirely
 ```
 
 | Strategy | Command | Effect |
 | --- | --- | --- |
-| Use cache (default) | `npx aoide` | Both caches read — no API spend |
-| Refresh app prompts | `npx aoide --update-snapshots` | Re-fetches app prompts only; eval cache is preserved |
-| Skip all caches | `npx aoide --no-cache` | Always hits live APIs (e.g. CI with live keys) |
+| Use cache (default) | `npx @templum/aoide` | Both caches read — no API spend |
+| Refresh app prompts | `npx @templum/aoide --update-snapshots` | Re-fetches app prompts only; eval cache is preserved |
+| Skip all caches | `npx @templum/aoide --no-cache` | Always hits live APIs (e.g. CI with live keys) |
 
 > **Why two caches?** `--update-snapshots` is intended for when you change a prompt. It must not silently re-run all your judge evaluations — those are deterministic enough to cache independently and can be expensive to repeat.
 
@@ -624,8 +624,8 @@ const config: AoideConfig = {
 Override from the CLI:
 
 ```bash
-npx aoide --max-retries 5
-npx aoide --max-retries 0   # disable retries
+npx @templum/aoide --max-retries 5
+npx @templum/aoide --max-retries 0   # disable retries
 ```
 
 > **Retry count:** `maxRetries: 3` (default) allows up to 4 total attempts — the original attempt plus 3 retries. `maxRetries: 0` disables retries entirely, making exactly 1 attempt with no retries.
@@ -667,14 +667,14 @@ pricingOverrides: {
 Override per provider in code:
 
 ```ts
-import { setProviderConcurrency } from 'aoide';
+import { setProviderConcurrency } from '@templum/aoide';
 setProviderConcurrency('openai', 10);
 ```
 
 Override globally via CLI:
 
 ```bash
-npx aoide --max-workers 3
+npx @templum/aoide --max-workers 3
 ```
 
 ---
@@ -733,7 +733,7 @@ it('my test', async () => {
 
 **Anthropic responses are cut off** — The default `max_tokens` for the Anthropic provider is `4096`. For longer responses, pass a higher value per request (`runPrompt(target, { maxTokens: 8192, ... })`) or set it globally on the provider: `new AnthropicProvider(id, key, undefined, undefined, 8192)`.
 
-**`aoide init` not recognised** — The `init` sub-command is case-insensitive (`Init`, `INIT` all work). If it still fails, check that you are running `npx aoide init` from the project root.
+**`aoide init` not recognised** — The `init` sub-command is case-insensitive (`Init`, `INIT` all work). If it still fails, check that you are running `npx @templum/aoide init` from the project root.
 
 **Reporter name has no effect** — Check spelling. Supported names are `terminal` and `json`. An unknown name logs `[aoide] Unknown reporter: "...". Supported: terminal, json` and is otherwise ignored. If all reporter names are unknown, `terminal` is used as a fallback.
 

@@ -4,8 +4,8 @@
  * Persona adherence tests — verifies the model consistently adopts and maintains
  * the voice, style, and constraints defined in a system prompt persona.
  */
-import { describe, it, expect, runPrompt } from 'aoide';
-import type { ModelTarget } from 'aoide';
+import { describe, it, expect, runPrompt } from '@templum/aoide';
+import type { ModelTarget } from '@templum/aoide';
 
 const TARGET: ModelTarget = { provider: 'local:lmstudio', model: 'google/gemma-3-12b' };
 
