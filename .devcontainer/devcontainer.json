@@ -1,0 +1,36 @@
+{
+    "name": "Aoide Dev Environment",
+    "image": "mcr.microsoft.com/devcontainers/typescript-node:24",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "esbenp.prettier-vscode",
+                "js/ts.tsdk.path": "node_modules/typescript/lib",
+                "js/ts.preferences.importModuleSpecifierEnding": "js",
+                "chat.disableAIFeatures": true,
+                "github.copilot.enable": {
+                    "*": false
+                }
+            },
+            "extensions": [
+                "-GitHub.copilot",
+                "-GitHub.copilot-chat",
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "qwtel.sqlite-viewer",
+                "Google.gemini-cli-vscode-ide-companion",
+                "davidanson.vscode-markdownlint",
+                "yoavbls.pretty-ts-errors",
+                "usernamehw.errorlens"
+            ]
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {
+            "version": "latest"
+        }
+    },
+    "remoteUser": "node",
+    "postCreateCommand": "npm install && npm install -g @google/gemini-cli"
+}
