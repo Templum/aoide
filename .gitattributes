@@ -1,0 +1,28 @@
+# Handle line endings automatically for files detected as text
+# and leave binary files untouched.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized
+# and converted to native line endings on checkout.
+*.js text
+*.ts text
+*.json text
+*.md text
+*.yml text
+*.yaml text
+*.html text
+*.css text
+*.svg text
+
+# Declare files that will always have LF line endings on checkout.
+*.sh text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary

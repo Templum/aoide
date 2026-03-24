@@ -1,0 +1,114 @@
+{
+  "name": "aoide",
+  "version": "0.1.0",
+  "description": "A TypeScript testing framework for LLM prompts and AI workflows — LLM-as-judge evaluations, snapshot caching, and cost telemetry.",
+  "type": "module",
+  "keywords": [
+    "llm",
+    "testing",
+    "ai",
+    "prompt",
+    "langchain",
+    "openai",
+    "anthropic",
+    "ollama",
+    "lm-studio",
+    "llm-judge",
+    "snapshot-testing",
+    "typescript"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spelczer/aoide"
+  },
+  "homepage": "https://github.com/spelczer/aoide#readme",
+  "bugs": {
+    "url": "https://github.com/spelczer/aoide/issues"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "main": "./dist/cjs/index.cjs",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/cjs/index.d.cts",
+        "default": "./dist/cjs/index.cjs"
+      },
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      }
+    },
+    "./providers/openai": {
+      "require": {
+        "types": "./dist/cjs/providers/openai.d.cts",
+        "default": "./dist/cjs/providers/openai.cjs"
+      },
+      "import": {
+        "types": "./dist/esm/providers/openai.d.ts",
+        "default": "./dist/esm/providers/openai.js"
+      }
+    },
+    "./providers/ollama": {
+      "require": {
+        "types": "./dist/cjs/providers/ollama.d.cts",
+        "default": "./dist/cjs/providers/ollama.cjs"
+      },
+      "import": {
+        "types": "./dist/esm/providers/ollama.d.ts",
+        "default": "./dist/esm/providers/ollama.js"
+      }
+    },
+    "./providers/lmstudio": {
+      "require": {
+        "types": "./dist/cjs/providers/lmstudio.d.cts",
+        "default": "./dist/cjs/providers/lmstudio.cjs"
+      },
+      "import": {
+        "types": "./dist/esm/providers/lmstudio.d.ts",
+        "default": "./dist/esm/providers/lmstudio.js"
+      }
+    },
+    "./providers/anthropic": {
+      "require": {
+        "types": "./dist/cjs/providers/anthropic.d.cts",
+        "default": "./dist/cjs/providers/anthropic.cjs"
+      },
+      "import": {
+        "types": "./dist/esm/providers/anthropic.d.ts",
+        "default": "./dist/esm/providers/anthropic.js"
+      }
+    }
+  },
+  "bin": {
+    "aoide": "./bin/aoide.js"
+  },
+  "files": [
+    "dist/",
+    "bin/",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test:framework": "vitest run",
+    "test:lib": "node --import tsx/esm bin/aoide.js --no-cache --config tests/integration/aoide.config.ts",
+    "typecheck": "tsc --noEmit",
+    "update-pricing": "npx tsx scripts/build-pricing.ts",
+    "update-pricing:dry": "npx tsx scripts/build-pricing.ts --dry-run",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^2.0.0"
+  },
+  "dependencies": {
+    "ajv": "^8.18.0"
+  }
+}
