@@ -20,7 +20,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Templum/aoide"
+    "url": "git+https://github.com/Templum/aoide.git"
   },
   "homepage": "https://github.com/Templum/aoide#readme",
   "bugs": {
@@ -85,7 +85,7 @@
     }
   },
   "bin": {
-    "aoide": "./bin/aoide.js"
+    "aoide": "bin/aoide.js"
   },
   "files": [
     "dist/",
