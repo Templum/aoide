@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-04-12T00:45:16.259Z",
+  "updatedAt": "2026-05-03T00:54:10.232Z",
   "sources": [
     "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
     "https://www.llm-prices.com/current-v1.json"
@@ -133,6 +133,14 @@
       "input": 5,
       "output": 25
     },
+    "claude-opus-4-7": {
+      "input": 5,
+      "output": 25
+    },
+    "claude-opus-4-7-20260416": {
+      "input": 5,
+      "output": 25
+    },
     "claude-sonnet-4-20250514": {
       "input": 3,
       "output": 15
@@ -224,6 +232,14 @@
     "deepseek-reasoner": {
       "input": 0.55,
       "output": 2.19
+    },
+    "deepseek-v4-flash": {
+      "input": 0.14,
+      "output": 0.28
+    },
+    "deepseek-v4-pro": {
+      "input": 1.74,
+      "output": 3.48
     },
     "dolphin": {
       "input": 0.5,
@@ -797,7 +813,15 @@
       "input": 0.75,
       "output": 4.5
     },
+    "gpt-5.4-mini-2026-03-17": {
+      "input": 0.75,
+      "output": 4.5
+    },
     "gpt-5.4-nano": {
+      "input": 0.2,
+      "output": 1.25
+    },
+    "gpt-5.4-nano-2026-03-17": {
       "input": 0.2,
       "output": 1.25
     },
@@ -812,6 +836,26 @@
     "gpt-5.4-pro-272k": {
       "input": 60,
       "output": 270
+    },
+    "gpt-5.5": {
+      "input": 5,
+      "output": 30
+    },
+    "gpt-5.5-2026-04-23": {
+      "input": 5,
+      "output": 30
+    },
+    "gpt-5.5-272k": {
+      "input": 10,
+      "output": 45
+    },
+    "gpt-5.5-pro": {
+      "input": 30,
+      "output": 180
+    },
+    "gpt-5.5-pro-2026-04-23": {
+      "input": 30,
+      "output": 180
     },
     "gpt-audio": {
       "input": 2.5,
@@ -850,6 +894,22 @@
       "output": 10
     },
     "gpt-image-1.5-2025-12-16": {
+      "input": 5,
+      "output": 10
+    },
+    "gpt-image-2": {
+      "input": 5,
+      "output": 10
+    },
+    "gpt-image-2-2026-04-21": {
+      "input": 5,
+      "output": 10
+    },
+    "gpt-image-2-image": {
+      "input": 8,
+      "output": 30
+    },
+    "gpt-image-2-text": {
       "input": 5,
       "output": 10
     },
@@ -984,30 +1044,6 @@
     "kimi-k2-turbo-preview": {
       "input": 1.15,
       "output": 8
-    },
-    "luminous-base": {
-      "input": 30,
-      "output": 33
-    },
-    "luminous-base-control": {
-      "input": 37.5,
-      "output": 41.25
-    },
-    "luminous-extended": {
-      "input": 45,
-      "output": 49.5
-    },
-    "luminous-extended-control": {
-      "input": 56.25,
-      "output": 61.875
-    },
-    "luminous-supreme": {
-      "input": 175,
-      "output": 192.5
-    },
-    "luminous-supreme-control": {
-      "input": 218.75,
-      "output": 240.625
     },
     "magistral-medium-latest": {
       "input": 2,
