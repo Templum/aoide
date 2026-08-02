@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-24T00:59:29.653Z",
+  "updatedAt": "2026-08-02T03:13:11.293Z",
   "sources": [
     "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
     "https://www.llm-prices.com/current-v1.json"
@@ -93,6 +93,10 @@
       "input": 1,
       "output": 5
     },
+    "claude-fable-5": {
+      "input": 10,
+      "output": 50
+    },
     "claude-haiku-4-5": {
       "input": 1,
       "output": 5
@@ -100,6 +104,10 @@
     "claude-haiku-4-5-20251001": {
       "input": 1,
       "output": 5
+    },
+    "claude-mythos-5": {
+      "input": 10,
+      "output": 50
     },
     "claude-opus-4": {
       "input": 15,
@@ -141,6 +149,14 @@
       "input": 5,
       "output": 25
     },
+    "claude-opus-4-8": {
+      "input": 5,
+      "output": 25
+    },
+    "claude-opus-5": {
+      "input": 5,
+      "output": 25
+    },
     "claude-sonnet-4-20250514": {
       "input": 3,
       "output": 15
@@ -168,6 +184,10 @@
     "claude-sonnet-4.5-200k": {
       "input": 6,
       "output": 22.5
+    },
+    "claude-sonnet-5": {
+      "input": 2,
+      "output": 10
     },
     "codestral-latest": {
       "input": 0.3,
@@ -210,8 +230,8 @@
       "output": 10
     },
     "command-r7b-12-2024": {
-      "input": 0.15,
-      "output": 0.0375
+      "input": 0.0375,
+      "output": 0.15
     },
     "computer-use-preview": {
       "input": 3,
@@ -437,6 +457,10 @@
       "input": 0.5,
       "output": 3
     },
+    "gemini-3-pro-image": {
+      "input": 2,
+      "output": 12
+    },
     "gemini-3-pro-image-preview": {
       "input": 2,
       "output": 12
@@ -448,6 +472,10 @@
     "gemini-3-pro-preview-200k": {
       "input": 4,
       "output": 18
+    },
+    "gemini-3.1-flash-image": {
+      "input": 0.5,
+      "output": 3
     },
     "gemini-3.1-flash-image-preview": {
       "input": 0.5,
@@ -477,6 +505,14 @@
       "input": 1.5,
       "output": 9
     },
+    "gemini-3.5-flash-lite": {
+      "input": 0.3,
+      "output": 2.5
+    },
+    "gemini-3.6-flash": {
+      "input": 1.5,
+      "output": 7.5
+    },
     "gemini-exp-1206": {
       "input": 0.3,
       "output": 2.5
@@ -492,6 +528,10 @@
     "gemini-live-2.5-flash-preview-native-audio-09-2025": {
       "input": 0.3,
       "output": 2
+    },
+    "gemini-omni-flash-preview": {
+      "input": 1.5,
+      "output": 9
     },
     "gemini-pro-latest": {
       "input": 1.25,
@@ -865,6 +905,38 @@
       "input": 30,
       "output": 180
     },
+    "gpt-5.5-pro-272k": {
+      "input": 60,
+      "output": 270
+    },
+    "gpt-5.6": {
+      "input": 5,
+      "output": 30
+    },
+    "gpt-5.6-luna": {
+      "input": 0.2,
+      "output": 1.2
+    },
+    "gpt-5.6-luna-272k": {
+      "input": 0.4,
+      "output": 1.8
+    },
+    "gpt-5.6-sol": {
+      "input": 5,
+      "output": 30
+    },
+    "gpt-5.6-sol-272k": {
+      "input": 10,
+      "output": 45
+    },
+    "gpt-5.6-terra": {
+      "input": 2,
+      "output": 12
+    },
+    "gpt-5.6-terra-272k": {
+      "input": 4,
+      "output": 18
+    },
     "gpt-audio": {
       "input": 2.5,
       "output": 10
@@ -932,6 +1004,14 @@
     "gpt-realtime-2": {
       "input": 4,
       "output": 16
+    },
+    "gpt-realtime-2.1": {
+      "input": 4,
+      "output": 24
+    },
+    "gpt-realtime-2.1-mini": {
+      "input": 0.6,
+      "output": 2.4
     },
     "gpt-realtime-2025-08-28": {
       "input": 4,
@@ -1093,6 +1173,10 @@
       "input": 0.1,
       "output": 0.3
     },
+    "muse-spark-1.1": {
+      "input": 1.25,
+      "output": 4.25
+    },
     "o1": {
       "input": 15,
       "output": 60
@@ -1230,8 +1314,8 @@
       "output": 0.1
     },
     "us-gov.anthropic.claude-sonnet-4-5-20250929-v1:0": {
-      "input": 3.3,
-      "output": 16.5
+      "input": 3.6,
+      "output": 18
     }
   }
 }
