@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-04T04:53:59.565Z",
+  "updatedAt": "2026-10-25T03:45:19.699Z",
   "sources": [
     "https://raw.githubusercontent.com/BerriAI/litellm/main/model_prices_and_context_window.json",
     "https://www.llm-prices.com/current-v1.json"
@@ -101,6 +101,18 @@
       "input": 1,
       "output": 5
     },
+    "claude-haiku-5-5": {
+      "input": 0.1,
+      "output": 0.5
+    },
+    "claude-haiku-5.5": {
+      "input": 0.1,
+      "output": 0.5
+    },
+    "claude-haiku-5.5-100k": {
+      "input": 0.5,
+      "output": 2.5
+    },
     "claude-mythos-5": {
       "input": 10,
       "output": 50
@@ -157,6 +169,14 @@
       "input": 4,
       "output": 20
     },
+    "claude-sonnet-4": {
+      "input": 3,
+      "output": 15
+    },
+    "claude-sonnet-4-200k": {
+      "input": 6,
+      "output": 22.5
+    },
     "claude-sonnet-4-5": {
       "input": 3,
       "output": 15
@@ -180,6 +200,10 @@
     "claude-sonnet-4.5-200k": {
       "input": 6,
       "output": 22.5
+    },
+    "claude-sonnet-4.6": {
+      "input": 3,
+      "output": 15
     },
     "claude-sonnet-5": {
       "input": 2,
@@ -218,6 +242,10 @@
       "output": 0.15
     },
     "computer-use-preview": {
+      "input": 3,
+      "output": 12
+    },
+    "computer-use-preview-2025-03-11": {
       "input": 3,
       "output": 12
     },
@@ -525,6 +553,10 @@
       "input": 0.75,
       "output": 4.5
     },
+    "gemini-4-argon": {
+      "input": 2,
+      "output": 10
+    },
     "gemini-exp-1206": {
       "input": 0.3,
       "output": 2.5
@@ -545,6 +577,10 @@
       "input": 0.5,
       "output": 2
     },
+    "gemini-nano-banana-2.1": {
+      "input": 1.5,
+      "output": 7.5
+    },
     "gemini-omni-flash-preview": {
       "input": 1.5,
       "output": 9
@@ -556,6 +592,10 @@
     "gemini-robotics-er-1.5-preview": {
       "input": 0.3,
       "output": 2.5
+    },
+    "gemini-robotics-er-2-preview": {
+      "input": 1,
+      "output": 5
     },
     "gpt-3.5-turbo": {
       "input": 0.5,
@@ -673,6 +713,10 @@
       "input": 0.15,
       "output": 0.6
     },
+    "gpt-4o-mini-search-preview-2025-03-11": {
+      "input": 0.15,
+      "output": 0.6
+    },
     "gpt-4o-mini-transcribe": {
       "input": 1.25,
       "output": 5
@@ -698,6 +742,10 @@
       "output": 10
     },
     "gpt-4o-search-preview": {
+      "input": 2.5,
+      "output": 10
+    },
+    "gpt-4o-search-preview-2025-03-11": {
       "input": 2.5,
       "output": 10
     },
@@ -873,6 +921,10 @@
       "input": 12.5,
       "output": 75
     },
+    "gpt-5.5-cyber-preview": {
+      "input": 12.5,
+      "output": 75
+    },
     "gpt-5.5-pro": {
       "input": 30,
       "output": 180
@@ -965,6 +1017,10 @@
       "input": 0.6,
       "output": 2.4
     },
+    "gpt-audio-mini-2025-10-06": {
+      "input": 0.6,
+      "output": 2.4
+    },
     "gpt-audio-mini-2025-12-15": {
       "input": 0.6,
       "output": 2.4
@@ -1040,6 +1096,10 @@
     "gpt-realtime-mini-2025-12-15": {
       "input": 0.6,
       "output": 2.4
+    },
+    "gpt-rosalind-discovery": {
+      "input": 5,
+      "output": 25
     },
     "gpt-rosalind-research": {
       "input": 5,
@@ -1213,6 +1273,30 @@
       "input": 1.15,
       "output": 8
     },
+    "kimi-k2.6": {
+      "input": 0.95,
+      "output": 4
+    },
+    "kimi-k2.7-code": {
+      "input": 0.95,
+      "output": 4
+    },
+    "kimi-k2.7-code-highspeed": {
+      "input": 1.9,
+      "output": 8
+    },
+    "kimi-k3": {
+      "input": 3,
+      "output": 15
+    },
+    "kimi-k3.1-pro": {
+      "input": 2,
+      "output": 10
+    },
+    "kimi-k3.1-pro-highspeed": {
+      "input": 4,
+      "output": 20
+    },
     "magistral-medium-latest": {
       "input": 2,
       "output": 5
@@ -1305,6 +1389,10 @@
       "input": 10,
       "output": 40
     },
+    "o3-deep-research-2025-06-26": {
+      "input": 10,
+      "output": 40
+    },
     "o3-mini": {
       "input": 1.1,
       "output": 4.4
@@ -1330,6 +1418,10 @@
       "output": 4.4
     },
     "o4-mini-deep-research": {
+      "input": 2,
+      "output": 8
+    },
+    "o4-mini-deep-research-2025-06-26": {
       "input": 2,
       "output": 8
     },
@@ -1400,6 +1492,10 @@
     "us-gov.anthropic.claude-fable-5-1": {
       "input": 12,
       "output": 60
+    },
+    "us-gov.anthropic.claude-haiku-5-5": {
+      "input": 0.12,
+      "output": 0.6
     },
     "us-gov.anthropic.claude-opus-4-8": {
       "input": 6,
